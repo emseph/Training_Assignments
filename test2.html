@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <iframe id="myiframe" src="" height="240" width="100%"></iframe>
+
+    <ul class="video-links">
+      <li>
+        <a
+          href="https://www.youtube.com/embed/GG7fLOmlhYg"
+          onclick="return changeSrc(this)"
+          >YouTube</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://our-unique-url-for-this-title.com"
+          onclick="return changeSrc(this)"
+          >Vimeo</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://our-unique-url-for-this-title.com"
+          onclick="return changeSrc(this)"
+          >DailyMotion</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://our-unique-url-for-this-title.com"
+          onclick="return changeSrc(this)"
+          >Veoh</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://our-unique-url-for-this-title.com"
+          onclick="return changeSrc(this)"
+          >Crackle</a
+        >
+      </li>
+    </ul>
+
+    <script>
+      function changeSrc(obj) {
+        document.getElementById("myiframe").src = obj.href;
+        return false;
+      }
+    </script>
+  </body>
+</html>

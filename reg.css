@@ -1,0 +1,131 @@
+/* .flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.font-s {
+  font-size: small;
+}
+.font-xs {
+  font-size: x-small;
+}
+.font-xxs {
+  font-size: xx-small;
+}
+.display-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-self: center;
+}
+.regBtn {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(+50%);
+  background-color: aqua;
+  position: relative;
+}
+.txt-small {
+  font-size: small;
+}
+.txt-x-small {
+  font-size: x-small;
+}
+.txt-xx-small {
+  font-size: xx-small;
+} */
+
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+/* .user-details .input-box input:invalid {
+  border-color: #ff0000;
+} */
+form .button {
+  height: 45px;
+  /* margin: 45px 0; */
+}
+form .button input {
+  height: 100%;
+  outline: none;
+  width: 100%;
+  color: #fff;
+  border: none;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
